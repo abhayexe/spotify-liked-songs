@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Songs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="icon" href="icons8-spotify-48.png" sizes="48x48" type="image/x-icon">
+</head>
+<body>
+    <div class="background"></div>
+        <div class="music-player">
+            <div class="tools">
+                <div class="circle">
+                  <span class="red box"></span>
+                </div>
+                <div class="circle">
+                  <span class="yellow box"></span>
+                </div>
+                <div class="circle">
+                  <span class="green box"></span>
+                </div>
+            </div>
+            <img id="album-cover" src="" alt="Album Cover" class="album-cover">
+            <div class="controls">
+                <button id="prev-btn"><img src="previous.png" alt=""></button>
+                <button id="play-pause-btn">▶</button>
+                <button id="next-btn"><img src="next.png" alt=""></button>
+            </div>
+            <div class="progress-bar">
+                <input type="range" id="progress" value="0" min="0" max="100">
+            </div>
+            <div class="song-info">
+                <span id="song-title">Title</span> 
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#fe0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <br>
+                <span id="song-artist">Artist</span>
+            </div>
+        </div>
+    
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
